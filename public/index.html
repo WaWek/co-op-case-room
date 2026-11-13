@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Co-op Case Room — Портфолио</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body class="landing-page">
+  <header class="site-header">
+    <a href="/" class="logo">Co-op Case Room</a>
+    <nav class="header-nav">
+      <a href="#how-it-works">Как это работает</a>
+      <!-- Замени ссылки на свои -->
+      <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://t.me/your-username" target="_blank" rel="noopener">Telegram</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Hero Секция -->
+    <section class="hero animate-fade-up">
+      <h1>Разбери мои кейсы вместе со мной</h1>
+      <p class="lead">Соло-версия всегда доступна. Но настоящая магия происходит в кооп-режиме: две роли, асимметричные данные и общий Decision Log.</p>
+      <div class="hero-actions">
+        <a href="#cases-list" class="btn primary">Посмотреть кейсы</a>
+        <a href="#how-it-works" class="btn">Как это устроено?</a>
+      </div>
+    </section>
+
+    <!-- Как это работает -->
+    <section id="how-it-works" class="how-it-works animate-fade-up delay-1">
+      <h2>Как проходит разбор</h2>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Выберите кейс</h3>
+          <p>Откройте соло-версию, чтобы понять контекст задачи и стек.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Позовите коллегу</h3>
+          <p>Нажмите «Разобрать вдвоём» и отправьте ссылку партнёру.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Соберите пазл</h3>
+          <p>У каждого свои карточки. Обсудите их и получите полный Decision Log.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Список кейсов -->
+    <section id="cases-list" class="cases-section animate-fade-up delay-2">
+      <h2>Мои проекты</h2>
+      <ul id="cases" class="cases">
+        <li class="muted">Загрузка кейсов...</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Разработано с ❤️ и WebSockets. Комнаты живут в памяти сервера.</p>
+  </footer>
+  
+  <script src="/js/index.js" type="module"></script>
+</body>
+</html>
