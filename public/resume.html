@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Резюме — Александр Денежный</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; color: #333; line-height: 1.5; margin: 0; padding: 40px; background: #fff; }
+    .container { max-width: 800px; margin: 0 auto; }
+    header { border-bottom: 2px solid #2a2e36; padding-bottom: 20px; margin-bottom: 20px; }
+    h1 { margin: 0 0 5px 0; font-size: 32px; color: #111; }
+    .subtitle { font-size: 18px; color: #6ea8ff; font-weight: bold; margin-bottom: 10px; }
+    .contacts { font-size: 14px; color: #555; }
+    .contacts span { margin-right: 15px; }
+    h2 { font-size: 18px; text-transform: uppercase; letter-spacing: 1px; color: #111; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-top: 30px; margin-bottom: 15px; }
+    p { margin: 0 0 10px 0; font-size: 15px; }
+    ul { margin: 0 0 15px 0; padding-left: 20px; font-size: 15px; }
+    li { margin-bottom: 5px; }
+    .project { margin-bottom: 15px; }
+    .project-title { font-weight: bold; font-size: 16px; color: #111; }
+    .project-stack { font-size: 13px; color: #666; font-style: italic; margin-bottom: 5px; }
+    .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 15px; }
+    .skills-list { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skill { background: #f0f0f0; padding: 5px 10px; border-radius: 4px; font-size: 14px; }
+    @media print {
+      body { padding: 0; }
+      .container { max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Александр Денежный</h1>
+      <div class="subtitle">Fullstack-разработчик</div>
+      <div class="contacts">
+        <span>📞 +7 (995) 399-98-18</span>
+        <span>✉️ evgosha2020@gmail.com</span><br>
+        <span>💻 github.com/WaWek</span>
+        <span>🌐 coop-case-room.ru</span>
+      </div>
+    </header>
+
+    <h2>О себе</h2>
+    <p>Fullstack-разработчик с опытом создания веб-приложений, мобильных интерфейсов и игровых механик. Пишу на C#, Java, Kotlin и JavaScript. Люблю превращать сложные задачи в элегантные интерфейсы, исследовать новые технологии (от нейросетей до WebSockets) и доводить проекты до идеала.</p>
+
+    <h2>Личная информация и образование</h2>
+    <div class="info-grid">
+      <div><strong>Дата рождения:</strong> 20.04.2006</div>
+      <div><strong>Город:</strong> Новороссийск (готов к переезду)</div>
+      <div style="grid-column: 1 / -1;"><strong>Образование:</strong> Среднее специальное, «Информационные системы и программирование» (диплом прилагается)</div>
+    </div>
+
+    <h2>Навыки</h2>
+    <ul>
+      <li><strong>Backend & Web:</strong> C#, ASP.NET Core, Node.js, Express, WebSockets, Entity Framework Core.</li>
+      <li><strong>Frontend & Mobile:</strong> JavaScript (ES6+), HTML5, CSS3, React, Kotlin, Jetpack Compose, Android SDK.</li>
+      <li><strong>GameDev & AI:</strong> Unity 3D (Физика), Java (Нейросети с нуля), Math.</li>
+    </ul>
+
+    <h2>Ключевые проекты</h2>
+    
+    <div class="project">
+      <div class="project-title">Co-op Case Room (Portfolio)</div>
+      <div class="project-stack">Node.js, Express, WebSockets, Vanilla JS</div>
+      <p>Интерактивное портфолио для совместного разбора кейсов. Разработана real-time синхронизация состояний комнаты (асимметричные данные) с авто-реконнектом и экспортом в Markdown.</p>
+    </div>
+
+    <div class="project">
+      <div class="project-title">Нейросеть для Minecraft</div>
+      <div class="project-stack">Java, Math, Neural Networks</div>
+      <p>Реализация GAN-сети с нуля без использования сторонних библиотек (только java.util) для генерации построек в Minecraft. Написаны вручную: умножение матриц, ReLU, Backpropagation.</p>
+    </div>
+
+    <div class="project">
+      <div class="project-title">SWAGA - Маркетплейс</div>
+      <div class="project-stack">C#, ASP.NET Core MVC, EF Core</div>
+      <p>Интернет-магазин с кастомным дизайном, корзиной и сменой тем. Полностью отказались от Bootstrap ради уникального UI.</p>
+    </div>
+
+    <div class="project">
+      <div class="project-title">MediaSite - Хранилище фото и видео</div>
+      <div class="project-stack">C#, ASP.NET Core, SQLite</div>
+      <p>Сервис для загрузки и каталогизации медиафайлов. Реализована проверка MIME-типов, защита от вредоносных файлов и разделение контента по вкладкам.</p>
+    </div>
+
+    <div class="project">
+      <div class="project-title">DeepSeek-style APK (UI)</div>
+      <div class="project-stack">Kotlin, Jetpack Compose</div>
+      <p>Разработка кастомного, «теплого» интерфейса для мобильного приложения с нуля. Реализована работа с WindowInsets (клавиатурой) и плавные анимации.</p>
+    </div>
+
+    <div class="project">
+      <div class="project-title">Эзотерический веб-сайт (Таро)</div>
+      <div class="project-stack">React, Node.js, Framer Motion</div>
+      <p>Атмосферный сайт с 3D-эффектами, анимированными картами Таро и калькулятором совместимости на бэкенде.</p>
+    </div>
+
+  </div>
+</body>
+</html>
