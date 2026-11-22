@@ -13,6 +13,7 @@
   <header class="site-header">
     <a href="/" class="logo">Co-op Case Room</a>
     <nav class="header-nav">
+      <a href="#about-me">Обо мне</a>
       <a href="#how-it-works">Как это работает</a>
       <a href="https://github.com/WaWek" target="_blank" rel="noopener">GitHub</a>
       <a href="https://t.me/WaWek" target="_blank" rel="noopener">Telegram</a>
@@ -20,6 +21,7 @@
   </header>
 
   <main class="container">
+    <!-- Hero Секция -->
     <section class="hero animate-fade-up">
       <h1>Разбери мои кейсы вместе со мной</h1>
       <p class="lead">Соло-версия всегда доступна. Но настоящая магия происходит в кооп-режиме: две роли, асимметричные данные и общий Decision Log.</p>
@@ -29,7 +31,52 @@
       </div>
     </section>
 
-    <section id="how-it-works" class="how-it-works animate-fade-up delay-1">
+    <!-- Обо мне -->
+    <section id="about-me" class="about-section animate-fade-up delay-1">
+      <h2>Обо мне</h2>
+      <div class="about-grid">
+        <div class="about-photo">
+          <!-- Замени avatar.jpg на свой файл в папке public/img/ -->
+          <img src="/img/avatar.jpg" alt="Александр" class="avatar" onerror="this.src='https://via.placeholder.com/250?text=Your+Photo'">
+        </div>
+        <div class="about-content">
+          <h3>Привет, я Александр 👋</h3>
+          <p>Я Fullstack-разработчик, который любит превращать сложные задачи в элегантные интерфейсы. Пишу на C#, Java, Kotlin и JavaScript. От нейросетей для Minecraft до мобильных интерфейсов — мне нравится исследовать новые технологии и доводить проекты до идеала.</p>
+          
+          <div class="skills-wrapper">
+            <h4>Мои навыки</h4>
+            <div class="skills-grid">
+              <div class="skill-group">
+                <span class="skill-category">Backend & Web</span>
+                <div class="tags">
+                  <span>C#</span><span>ASP.NET Core</span><span>Node.js</span><span>Express</span><span>WebSockets</span>
+                </div>
+              </div>
+              <div class="skill-group">
+                <span class="skill-category">Frontend & Mobile</span>
+                <div class="tags">
+                  <span>JavaScript</span><span>HTML/CSS</span><span>Kotlin</span><span>Jetpack Compose</span><span>React</span>
+                </div>
+              </div>
+              <div class="skill-group">
+                <span class="skill-category">GameDev & AI</span>
+                <div class="tags">
+                  <span>Unity 3D</span><span>Java</span><span>Neural Networks</span><span>Physics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-actions">
+            <a href="#" class="btn primary" target="_blank">📄 Скачать резюме (PDF)</a>
+            <a href="mailto:evgosha2020@gmail.com" class="btn">✉️ Написать мне</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Как это работает -->
+    <section id="how-it-works" class="how-it-works animate-fade-up delay-2">
       <h2>Как проходит разбор</h2>
       <div class="steps-grid">
         <div class="step">
@@ -50,6 +97,7 @@
       </div>
     </section>
 
+    <!-- Список кейсов -->
     <section id="cases-list" class="cases-section animate-fade-up delay-2">
       <h2>Мои проекты</h2>
       <ul id="cases" class="cases">
@@ -59,7 +107,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>Разработано с ❤️ и WebSockets. Комнаты живут в памяти сервера.</p>
+    <p>Разработано с ❤️ и WebSockets. .</p>
   </footer>
   
   <script src="/js/index.js" type="module"></script>
